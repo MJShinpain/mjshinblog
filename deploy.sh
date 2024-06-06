@@ -3,6 +3,9 @@
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 
+# Ensure we are in the root of the project
+cd "$(dirname "$0")"
+
 # Clean the public folder
 rm -rf public/*
 
@@ -17,7 +20,7 @@ cd public
 git checkout gh-pages
 
 # Add changes to git.
-git add .
+git add --all
 
 # Commit changes.
 msg="rebuilding site `date`"
