@@ -15,7 +15,7 @@ fi
 
 # Build the project.
 # hugo -t <your theme>
-hugo -t PaperMod
+hugo -t PaperMod --ignoreCache
 
 # Go to public folder, submodule commit
 cd public
