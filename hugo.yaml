@@ -141,21 +141,17 @@ params:
 menu:
   main:
     - identifier: About me
-      name: about
+      name: About
       url: about
       weight: 1
     - identifier: clinic
       name: Clinic
       url: /clinic/
       weight: 2
-    - identifier: Business
-      name: business
+    - identifier: business
+      name: Business
       url: /business/
       weight: 3
-    - identifier: About me
-      name: about
-      url: about
-      weight: 1
     - name: Search
       url: search/
       weight: 4
