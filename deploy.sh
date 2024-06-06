@@ -8,6 +8,10 @@ hugo -t PaperMod
 
 # Go to public folder, submodule commit
 cd public
+
+# Ensure we're on the gh-pages branch
+git checkout gh-pages
+
 # Add changes to git.
 git add .
 
