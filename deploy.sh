@@ -6,7 +6,12 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 cd "$(dirname "$0")"
 
 # Clean the public folder
-rm -rf public/*
+if [ -d "public" ]; then
+  rm -rf public/*
+else
+  git submodule update --init --recursive
+fi
+
 
 # Build the project.
 # hugo -t <your theme>
